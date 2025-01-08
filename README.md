@@ -1,6 +1,6 @@
 # VLC
 
-[VLC](https://github.com/omaralbeik/VLC) is a repository that provides VLC binaries for use in iOS, tvOS, and macOS projects. This repository allows you to easily include VLC's powerful media playback capabilities in your projects via Swift Package Manager.
+[VLC](https://github.com/linhay/VLCKit) is a repository that provides VLC binaries for use in iOS, tvOS, and macOS projects. This repository allows you to easily include VLC's powerful media playback capabilities in your projects via Swift Package Manager.
 
 ## Installation
 
@@ -23,13 +23,13 @@ let package = Package(
   name: "YourProjectName",
   platforms: [/* */],
   dependencies: [
-    .package(url: "https://github.com/omaralbeik/VLC")
+    .package(url: "https://github.com/linhay/VLCKit")
   ],
   targets: [
     .target(
       name: "YourTargetName",
       dependencies: [
-        "VLC"
+        "VLCKit"
       ]
     ),
   ]
@@ -41,7 +41,7 @@ let package = Package(
 Once you’ve added the VLC package to your project, you can import and use it in your code:
 
 ```swift
-import VLC
+import VLCKit
 
 class MediaPlayer {
   func playMedia(from url: URL) {
